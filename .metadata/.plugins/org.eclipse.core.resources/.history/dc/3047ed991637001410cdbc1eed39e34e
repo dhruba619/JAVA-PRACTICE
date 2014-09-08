@@ -1,0 +1,20 @@
+
+public class selectionSortTry {
+	public static void main(String[] args){
+		int[] arr = {21,34,43,4,56,5,7,3,543,35,74,8,363};
+		for(int count =0;count<arr.length;count++){
+			int mincount =count;
+			for(int count2 = count+1;count2<arr.length;count2++){
+				if(arr[count2]<arr[mincount]){
+					mincount=count2
+				}
+				int temp =arr[count];
+				arr[count]=arr[mincount];
+				arr[mincount]=temp;
+			}
+		}
+		for(int count =0;count<arr.length;count++){
+			 System.out.println(" "+arr[count]);
+			}
+}
+	}

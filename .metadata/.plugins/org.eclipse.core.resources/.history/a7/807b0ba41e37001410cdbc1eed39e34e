@@ -1,0 +1,11 @@
+import java.util.Vector;
+import java.util.Enumeration;
+public class VectorTest {
+	public static void main(String[] args){
+		Vector transformers = new Vector(3,3);// Vector with initial size 3 , and increament 3.
+		System.out.println("Intial Size:" + transformers.size());
+		System.out.println("Initial Capacity: " + transformers.capacity());
+		transformers.addElement(new String("adghfhdhd"));
+		
+	}
+}

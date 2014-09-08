@@ -1,0 +1,23 @@
+import java.util.Enumeration;
+import java.util.Hashtable;
+
+
+public class HashTable {
+	public static void main(String[] args){
+		Hashtable points = new Hashtable();
+		Enumeration data;
+		points.put("TonyStark", "Iron Man");
+		points.put("BruceWayne", "Bat Man");
+		points.put("BruceBaner", "Hulk");
+		points.put("ClerkKent", "SuperMan");
+		data = points.keys();
+		while(data.hasMoreElements()){
+			String str = (String)data.nextElement();
+			System.out.println(str+": "+points.get(str));
+		}
+		String add;
+		add = (String)points.get("TonyStark");
+		points.put("TonyStark", add+"PepperPots");
+	}
+	
+}

@@ -1,0 +1,19 @@
+
+public class BubbleSortTry {
+	public static void main(String[] args){
+		int[] arr = {12,45,663,98,15,31,992,2,44,56,12,889,112545,896,166,996,216556,996,2665,2156696,2226,21566,22236,12225,2,666,8};
+		for (int count =1;count<arr.length;count++){}
+			for (int count2= 0;count2<arr.length-1;count2++){
+				if(arr[count2]>arr[count2+1]){
+					int temp =arr[count2];
+					arr[count2]=arr[count2+1];
+					arr[count2+1]=temp;
+					         
+				}
+				
+			}
+			for(int count =0;count<arr.length;count++){
+				 System.out.println(" "+arr[count]);
+				}
+	}
+}
